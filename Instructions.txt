@@ -1,0 +1,63 @@
+Hi Binoy,
+
+As I said today, I think its really important that you get comfortable
+with git right away, because otherwise you won't be able to use the
+latest code and you won't be able to commit code that you write. There
+are some conceptual changes from SVN and other SCMs and you pretty
+much need to use the command line, so it might not be as straight
+forward as you imagine.
+
+Here are some resources:
+  Official git website: http://git-scm.com/
+  Discussion of the advantages of git over other SCMs: http://whygitisbetterthanx.com/
+  An into to git for SVN users: http://git.or.cz/course/svn.html
+  A free book about git (good for conceptual intro & reference): http://progit.org/book/
+  Help page for GitHub (our git hosting service): http://help.github.com/
+
+GitHub accounts for Mat and I are:
+  http://github.com/matholroyd/
+  http://github.com/chrisberkhout/
+
+Below is an exercise to work through to get familiar with it. Once you
+know what you're doing this will take about 5 mins, but the first time
+it will probably take quite a while to read the background info and
+try things out.
+
+You should probably also set up an SSH key for your GitHub account so
+you don't have to keep manually entering your password whenever you
+push.
+
+Your repo part:
+1) Create a public repository called 'testpub' in your Github account.
+2) Clone 'testpub' and add a file called 'one.txt' with the text 'one
+   content' and a commit message 'one commit comment'. Push the commit
+   back to Github.
+3) Create a new branch called 'dev' and add a file called 'dev.txt'
+   containing the text 'dev content' and a commit message 'dev commit
+   comment'. Push the dev branch back to Github.
+4) In the 'master' branch, add a line to the file 'one.txt' with the
+   text of the SHA1 commit ID for your first commit (the commit called
+   'one commit comment'). Commit this locally BUT do NOT push this one
+   to Github.
+5) Create a new branch called 'full' that merges all commits from the
+   'master' and 'dev' branches. Push it to Github.
+6) Set up the 'full' branch so that git will ignore any files named
+   *.bmp (hint: .gitignore).
+
+My repo part:
+7) Fork the repository in the trutime Github account called 'forbinoy'
+   (hint: forking is a GitHub concept).
+8) Delete the branch called 'delme' (delete it from github. hint: you
+   run a git command locally to do it).
+9) Rebase the 'jack' branch with the latest changes from 'jill'. Push
+   it to Github.
+
+Once you've worked through that you should have the basics of git
+down, and the rest should come with using it.
+
+Again, I'm happy to sit down and go through this stuff with you, so
+please let me know how you go and feel free to ask questions if you
+get stuck.
+
+Cheers,
+Chris
